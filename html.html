@@ -1,0 +1,29 @@
+<!-- item will be appened to this layout -->
+<div class="log_copy sl__chat__layout horizontal_flow text_outline">
+</div>
+<div class="log_copy sl__chat__layout horizontal_flow text_outline">
+</div>
+<div id="log" class="sl__chat__layout horizontal_flow text_outline">
+</div>
+
+
+<!--fuente google-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link href="https://blogfonts.com/css/aWQ9MTUxOTk0JnN1Yj05OTQmYz1hJnR0Zj1UeXBvbWFuY2VyKy0rQXJjaC1Cb2xkLm90ZiZuPWFyY2g/Arch.otf" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofP+NM8BuEpPzOqL4P+ZlO6dC5T5z9X2M" crossorigin="anonymous">
+<!-- chat item -->
+<script type="text/template" id="chatlist_item">
+  <div  data-from="{from}" data-id="{messageId}">
+    <i class="bi bi-moon-fill lunachat entradaluna"></i><span class="meta" >
+<span class="name">{from}</span>      <span class="badges"></span>
+    </span>
+
+    <span class="message">
+    <i class="bi bi-caret-left-fill triangle"></i>
+              <i class="bi bi-suit-diamond-fill starts3"></i>
+        <i class="bi bi-moon-fill luna2"></i>
+      {message}
+    </span>
+  </div>

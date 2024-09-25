@@ -1,0 +1,209 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+.lunachat{
+  position:fi;
+  color:#a5a1c7;
+    text-shadow: 1px 1px 2px #a5a1c7, 0 0 10px black, 0 0 5px black;
+  margin-right: 6px;
+}
+.entradaluna {
+  animation: entradaluna 3s ease-in-out;
+}
+
+@keyframes entradaluna {
+  50% {
+    
+    opacity: 0;
+  }
+  100% {
+    
+    opacity: 1;
+  }
+}
+
+
+
+.starts3{
+  left:340;
+  position:absolute;
+   color:white;
+  font-size:10px;
+animation: diamond 1.4s infinite alternate;
+  text-shadow: 1px 1px 2px white, 0 0 8px white, 0 0 5px white;
+ top:2;
+}
+@keyframes diamond {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+.triangle{
+  position:absolute;
+  color:#e5e4e5;
+  left:316;
+  z-index:-2;
+  top:21;
+  font-size:24px;
+}
+  .colon, .name {
+    height: 0px;
+  }
+  
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+        
+
+    margin: 0;
+  }
+  
+  #custom_html {
+    height: 100%;
+    vertical-align: bottom;
+    
+  }
+  
+.luna2{
+  position:absolute;
+  color:white;
+  right:12;
+  bottom:6;
+ transform: scaleX(-1);
+   text-shadow: 1px 1px 2px #f3fdff, 0 0 15px #f3fdff, 0 0 5px black;
+}
+  .sl__chat__layout {
+    /*Tipo de fuente*/
+    font-family: 'Roboto';
+    font-size: 30px;
+    z-index:1;
+    /*gordura del texto en general*/
+    font-weight: 700;
+    position: absolute;
+    /*Distancia del chat desde abajo hacia arriba*/
+    bottom: 0;
+    padding-top: 2em;
+   
+    box-sizing: border-box;
+    /*Para cambiar el color del mensaje por codigo es aqui*/
+    
+  }
+  .text_outline {
+      
+  }
+  
+  .sl__chat__layout > div {
+    /*distancia entre mensajes*/
+    padding: 0.5em;
+      /*Mantiene el mensaje en una linea*/
+    word-break: break-all;
+    
+    animation: slideInRight 0.01s ease forwards, $message_hide_delay forwards;
+    
+    /*velocidad de la aparicion del mensaje y direccion*/
+    -webkit-animation: slideInRight 3s ease;
+    
+  }
+  
+  /* makes messages go sideway */
+  .sl__chat__layout.horizontal_flow {
+    right: 0;
+    text-align: right;
+    /*esto mantiene el mensaje en una linea, si se baja a 50% el mensaje aparece de forma hoizontal*/
+    width: 2500%;
+    overflow: hidden;
+    
+  }
+  .sl__chat__layout.horizontal_flow > div {
+    
+    display: inline-block;
+    margin-left: 0.1em;
+    position: relative;
+    height: 1em;
+    overflow: hidden;
+    
+  }
+  
+  .sl__chat__layout > div.deleted {
+    
+    visibility: hidden;
+  }
+  
+  .sl__chat__layout .emote {
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    padding: 2px;
+    
+  }
+  
+  .sl__chat__layout .emote img {
+    
+    display: inline-block;
+    height: 0.8em;
+    opacity: 0;
+  }
+  
+  .badge,.colon,.name {
+    
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .sl__chat__layout .meta {
+    /*Color del nickname*/
+   
+
+      background: #4343ac;
+    /* the closing tag of `.meta` being in a new line creates a whitespace. */
+    /* unless it changes, padding-right won't be included. */
+
+    position: relative;
+    /*Distancia entre el nickname y el mensaje*/
+    margin-right: 30px;
+    border-radius: 15px;
+   
+  }
+  
+  .badge {
+    /*posicion de los emblemas de los nicname */
+    margin: 2px;
+    
+    height: 0.9em;
+    position: relative;
+  }
+  
+  .name {
+   text-shadow: 0 0 1px #000, 0 0 2px #000;
+    font-family: 'arch', sans-serif;
+  font-weight: bold;
+    color:white;
+    font-weight: 500;
+  }
+  
+#log .message{
+  background: #e5e4e5;
+  color: #5c5b5f;
+   border-radius: 20px;
+}
+
+.message{
+  padding-left:40;
+  padding-right:40;
+}
+  .message > img[src*=".gif"] {
+    
+    padding-right: 4px;
+  }
+  .message > img[src*=".gif"] + font {
+    position: relative;
+    top: -0.25em;
+    
+  }
